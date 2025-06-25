@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Video AI Maker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div id="controls-panel">
+            <div class="panel-header">
+                <div class="header-top">
+                    <h1 data-i18n="title">Prompt Video AI Maker</h1>
+                    <div class="header-buttons">
+                        <div class="lang-switcher">
+                            <button id="lang-id" class="lang-button active">ID</button>
+                            <button id="lang-en" class="lang-button">EN</button>
+                        </div>
+                        <button id="reset-all-btn" data-i18n="reset_all_button">Reset All</button>
+                    </div>
+                </div>
+                <p data-i18n="subtitle">Alat ini belajar darimu. Ketik opsi baru & tekan Enter untuk menyimpannya.</p>
+            </div>
+            
+            <div class="tab-buttons">
+                <button class="tab-button active" data-tab="tab-story" data-i18n="tab_story">1. Adegan & Cerita</button>
+                <button class="tab-button" data-tab="tab-cinematography" data-i18n="tab_cinematography">2. Sinematografi</button>
+                <button class="tab-button" data-tab="tab-lighting" data-i18n="tab_lighting">3. Cahaya & Warna</button>
+                <button class="tab-button" data-tab="tab-postpro" data-i18n="tab_postpro">4. Gaya & Post-Pro</button>
+            </div>
+
+            <form id="form-container">
+                <div class="tab-content active" id="tab-story">
+                    <h3 class="category-title"><span data-i18n="cat_core">Konsep Inti</span></h3>
+                    <div class="form-grid">
+                        <div class="form-group" data-combobox-id="genre"><label data-i18n="label_genre">Genre</label><div class="combobox-wrapper"></div></div>
+                        <div class="form-group" data-combobox-id="mood"><label data-i18n="label_mood">Mood & Nuansa</label><div class="combobox-wrapper"></div></div>
+                        <div class="form-group full-width"><label data-i18n="label_worldbuilding">Worldbuilding / Lore</label><textarea id="worldbuilding" data-i18n-placeholder="placeholder_worldbuilding"></textarea></div>
+                    </div>
+
+                    <h3 class="category-title"><span data-i18n="cat_mise_en_scene">Mise-en-scène</span></h3>
+                    <div class="form-grid">
+                         <div class="form-group full-width" data-combobox-id="lokasi"><label data-i18n="label_lokasi">Lokasi / Setting (Wajib)</label><div class="combobox-wrapper"></div></div>
+                         <div class="form-group full-width" data-combobox-id="set_dressing"><label data-i18n="label_set_dressing">Set Dressing & Properti</label><div class="combobox-wrapper"></div></div>
+                         <div class="form-group" data-combobox-id="archetype"><label data-i18n="label_archetype">Arketipe Karakter</label><div class="combobox-wrapper"></div></div>
+                         <div class="form-group" data-combobox-id="subjek"><label data-i18n="label_subjek">Subjek Utama (Wajib)</label><div class="combobox-wrapper"></div></div>
+                         <div class="form-group" data-combobox-id="emosi"><label data-i18n="label_emosi">Ekspresi / Emosi</label><div class="combobox-wrapper"></div></div>
+                         <div class="form-group" data-combobox-id="busana"><label data-i18n="label_busana">Busana / Kostum</label><div class="combobox-wrapper"></div></div>
+                         <div class="form-group full-width" data-combobox-id="aksi"><label data-i18n="label_aksi">Aksi / Blocking (Wajib)</label><div class="combobox-wrapper"></div></div>
+                         <div class="form-group full-width" data-combobox-id="symbolism"><label data-i18n="label_symbolism">Simbolisme / Motif</label><div class="combobox-wrapper"></div></div>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="tab-cinematography">
+                    <h3 class="category-title"><span data-i18n="cat_camera_lens">Kamera & Lensa</span></h3>
+                    <div class="form-grid">
+                        <div class="form-group" data-combobox-id="camera"><label data-i18n="label_camera">Emulasi Kamera</label><div class="combobox-wrapper"></div></div>
+                        <div class="form-group" data-combobox-id="lens_prop"><label data-i18n="label_lens_prop">Properti Lensa</label><div class="combobox-wrapper"></div></div>
+                    </div>
+                    <h3 class="category-title"><span data-i18n="cat_framing_comp">Framing & Komposisi</span></h3>
+                     <div class="form-grid">
+                        <div class="form-group" data-combobox-id="shot"><label data-i18n="label_shot">Shot & Framing</label><div class="combobox-wrapper"></div></div>
+                        <div class="form-group" data-combobox-id="angle"><label data-i18n="label_angle">Angle Kamera</label><div class="combobox-wrapper"></div></div>
+                        <div class="form-group" data-combobox-id="composition"><label data-i18n="label_composition">Aturan Komposisi</label><div class="combobox-wrapper"></div></div>
+                        <div class="form-group" data-combobox-id="gerakan"><label data-i18n="label_gerakan">Gerakan Kamera</label><div class="combobox-wrapper"></div></div>
+                    </div>
+                </div>
+                <div class="tab-content" id="tab-lighting">
+                    <h3 class="category-title"><span data-i18n="cat_lighting">Pencahayaan</span></h3>
+                    <div class="form-grid">
+                        <div class="form-group" data-combobox-id="light_style"><label data-i18n="label_light_style">Gaya Pencahayaan</label><div class="combobox-wrapper"></div></div>
+                        <div class="form-group" data-combobox-id="light_quality"><label data-i18n="label_light_quality">Kualitas Cahaya</label><div class="combobox-wrapper"></div></div>
+                        <div class="form-group" data-combobox-id="light_source"><label data-i18n="label_light_source">Sumber Cahaya Utama</label><div class="combobox-wrapper"></div></div>
+                        <div class="form-group" data-combobox-id="light_modifier"><label data-i18n="label_light_modifier">Lighting Modifiers</label><div class="combobox-wrapper"></div></div>
+                    </div>
+                    <h3 class="category-title"><span data-i18n="cat_env_color">Lingkungan & Warna</span></h3>
+                    <div class="form-grid">
+                        <div class="form-group" data-combobox-id="waktu"><label data-i18n="label_waktu">Waktu & Cuaca</label><div class="combobox-wrapper"></div></div>
+                        <div class="form-group" data-combobox-id="palet"><label data-i18n="label_palet">Palet Warna Dominan</label><div class="combobox-wrapper"></div></div>
+                    </div>
+                </div>
+                <div class="tab-content" id="tab-postpro">
+                    <h3 class="category-title"><span data-i18n="cat_post_pro">Post-Production</span></h3>
+                    <div class="form-grid">
+                        <div class="form-group" data-combobox-id="color_grade"><label data-i18n="label_color_grade">Color Grade Look</label><div class="combobox-wrapper"></div></div>
+                        <div class="form-group" data-combobox-id="grain"><label data-i18n="label_grain">Film Grain</label><div class="combobox-wrapper"></div></div>
+                        <div class="form-group" data-combobox-id="aspect_ratio"><label data-i18n="label_aspect_ratio">Rasio Aspek</label><div class="combobox-wrapper"></div></div>
+                        <div class="form-group" data-combobox-id="pacing"><label data-i18n="label_pacing">Pacing & Editing</label><div class="combobox-wrapper"></div></div>
+                        <div class="form-group" data-combobox-id="sound_design"><label data-i18n="label_sound_design">Sound Design (Konseptual)</label><div class="combobox-wrapper"></div></div>
+                        <div class="form-group" data-combobox-id="vfx"><label data-i18n="label_vfx">Efek Visual (VFX)</label><div class="combobox-wrapper"></div></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="output-panel">
+            <div class="panel-header-output">
+                <h2 data-i18n="output_title">Hasil Prompt</h2>
+            </div>
+            <textarea id="hasilPrompt" data-i18n-placeholder="placeholder_output"></textarea>
+            <button id="copyBtn" data-i18n="copy_button">Copy Treatment Block</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
